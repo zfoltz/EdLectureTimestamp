@@ -9,9 +9,7 @@
         "matches": ["https://edstem.org/us/courses/*/lessons/*"],
         "js": ["content.js"]
       }
-    ],
-    "background": {
-      "service_worker": "background.js"
-    }
+    ]
+
   }
   
