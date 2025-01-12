@@ -64,8 +64,8 @@ function fetchLessonData(lessonId, authToken) {
                       
                   });
                   injectTotalDurationIntoTitle(totalDuration);
-                  
               });
+              
               
           }
       })
@@ -111,8 +111,8 @@ function injectDurationIntoDOM(slideNumber, duration) {
 
 function injectTotalDurationIntoTitle(totalDuration) {
     const formattedTotalDuration = formatDuration(totalDuration);
-    const titleElem = document.querySelector('.lcts-title');
-
+    const titleElem = document.querySelector(`.ld-sb-heading-text`);
+    
     if (!titleElem) {
         console.warn("Title element not found!");
         return;
